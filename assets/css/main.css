@@ -112,7 +112,7 @@ body{
     object-fit: cover;
 }
 
-/* ============ section =============== */
+
 .container__section h1{
     color: #fff;
     text-shadow: 3px 0px 5px rgba(138, 136, 136, 0.554);
@@ -145,9 +145,26 @@ body{
     width: 100% !important;
     height: 100% !important;
 }
+/* ============ section =============== */
 
 
+.footer__{
+    height: 100%;
+}
 
+
+.container_1{
+    width: 20%;
+}
+
+.container_2{
+    width: 50%;
+    height: 100%;
+}
+.submit{
+    width: 35%;
+    text-align: center;
+}
 
 
 
@@ -181,6 +198,24 @@ body{
     text-decoration: none;
 }
 
+
+
+
+
+
+
+
+
+@media screen and (max-width:1440){
+    .card_container{
+        max-width: 100% !important;
+    }
+}
+@media screen and (max-width:1199){
+    .card_container{
+        flex-direction: column !important;
+    }
+}
 
 
 
