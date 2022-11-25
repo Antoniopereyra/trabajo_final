@@ -292,3 +292,49 @@ body{
     font-size: .7rem;
     margin-bottom: 1rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================== media query ==================== */
+
+
+
+@media screen and (max-width:770px){
+    .container_new{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container_new_1, .container_new_2{
+        width: 100%;
+    }
+    .container_new_2_card{
+        width: 48.2%;
+        justify-content: space-between;
+    }
+    .container-noti-reciente{
+        width: 100%;
+    }
+}
+@media screen and (max-width:570px){
+    .container_new_2{
+        height: 100%;
+    }
+    .container_new_2_card{
+        width: 100%;
+        height: 20rem;
+    }
+}
