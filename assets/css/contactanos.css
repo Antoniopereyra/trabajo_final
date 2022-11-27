@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@700&family=Dosis:wght@300&family=Silkscreen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --redblack: linear-gradient(133deg, rgb(80, 3, 3) 0%, rgba(10, 0, 0, 1) 23%, rgba(22, 0, 0, 1) 75%, rgba(130, 5, 5, 1) 100%);
+    --profile: linear-gradient(355deg, rgba(124, 112, 112, 0.301) 0%, rgba(189, 129, 129, 0.186) 98%);
+    --bgcard: rgba(44, 48, 59, 0.637);
+}
+
+body {
+    padding: 0 0;
+    background: var(--redblack);
+    min-height: 100%;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+/* ============================== nav_bar ============================== */
+.logo {
+    color: #fff;
+}
+
+.nav_bar {
+    background: var(--redblack);
+    width: 100%;
+    height: 10%;
+    background-repeat: no-repeat;
+    border-bottom: .1px solid rgba(237, 15, 15, 0.978);
+}
+
+.nav-link {
+    padding: .3rem .8rem;
+    background: rgb(89, 35, 35);
+    margin: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    background: rgba(114, 84, 84, 0.678);
+    transition: .3s;
+    transform: scale(1.02);
+}
+
+.nav-item a {
+    color: #fff;
+}
+
+.logo_nav {
+    height: 4rem;
+    width: 4rem;
+    margin-left: 4rem;
+}
+
+.logo_nav img {
+    width: 100%;
+    height: 100%;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.colapso {
+    flex-grow: 0 !important;
+}
+
+/* =================== formulario ======================== */
+
+.form {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 2rem 0; 
+    flex-wrap: wrap;
+}
+.form_titulo{
+    width: 100%;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(21, 21, 21);
+    text-shadow: 2px 0px 2px rgba(255, 99, 99, 0.222);
+}
+.form_group{
+    background: rgb(228, 228, 228);
+    width: 40%;
+    height: 100%;
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 5px 2px 4px rgba(199, 198, 198, 0.497);
+}
+.form_group_1{
+    width: 50%;
+    position: relative;
+    color: #5757577e;
+    padding: 0 .5rem;
+    font-weight: bold;
+}
+.form_input{
+    width: 100%;
+    font-size: 1rem;
+    padding: .6rem .3rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #2f2e2e7e;
+    background: rgba(0, 0, 0, 0);
+}
+.form_label{
+    position: absolute;
+    color: #1b1a1a7e;
+    top: -.5rem;
+    left: .4rem;
+    transform: translateY(10px);
+    transition: .4s;
+}
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label {
+    transform: translateY(-12px) scale(.9);
+    transform-origin: top left;
+    color: #3866f2;
+}
+
+
+.form_group_2{
+    width: 100%;
+    margin-top: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.form_textarea{
+    border: 1px solid #2f2e2e7e;
+    height: 30% !important;
+    resize: none;
+    border-radius: .2rem;
+    padding: 0 .5rem;
+}
+.form_label_textarea{
+    top: -.6rem;
+    left: 1rem;
+}
+
+.boton_enviar{
+    width: 100%;
+    display: flex;
+    padding-right: .45rem;
+    justify-content: end;
+    gap: .4rem;
+}
+.boton_enviar input{
+    background: rgb(62, 68, 171);
+    border: 1px solid #4545454e;
+    box-shadow: 5px 2px 4px rgba(199, 198, 198, 0.75);
+    padding: .1rem 1rem;
+    border-radius: .2rem;
+    color: #fff;
+    transition: .2s;
+}
+.boton_enviar input:hover{
+    background: rgb(70, 118, 162);
+    transform: scale(.94);
+}
+
+/* =================== footer ======================== */
+
+.foooter{
+    background: linear-gradient(133deg, rgba(10,0,0,1) 23%, rgba(22,0,0,1) 75%);   
+    border-top: .1px solid  rgba(237, 15, 15, 0.978) ;
+}
+.titulo_footer{
+    color: #fff;
+    text-shadow: 3px 0px 5px rgba(138 136 136/ 0.554);
+    font-family: 'Cairo', sans-serif;
+}
+.footer_redsocial a i{
+    color: #e34444c1;
+}
+.footer_redsocial a i:hover{
+    transform: scale(1.2);
+    transition: 1s ;
+    color: rgb(255, 229, 229);
+}
+
+
+.Copyright{
+    width: 100%;
+    height: 2rem;
+    background: rgba(52, 0, 0, 0.34);
+}
+.Copyright p{
+    color: #bca7a7;
+    font-size: .7rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:870px){
+    .form_contenedor{
+        flex-direction: column;
+    }
+    .form_group_1{
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
