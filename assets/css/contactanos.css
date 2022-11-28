@@ -203,8 +203,16 @@ body {
     .form_contenedor{
         flex-direction: column;
     }
+    .form_group{
+        width: 65%;
+    }
     .form_group_1{
         width: 100%;
         margin: 1rem 0;
+    }
+}
+@media screen and (max-width:470px){
+    .form_group{
+        width: 85%;
     }
 }
